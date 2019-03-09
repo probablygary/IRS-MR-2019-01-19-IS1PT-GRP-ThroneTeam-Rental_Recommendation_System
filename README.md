@@ -1,4 +1,4 @@
-# rental-recommender
+# IRS-MR-2019-01-19-IS1PT-GRP-ThroneTeam-IR2S
 
 ## SECTION 1 : PROJECT TITLE
 ## Intelligent Rental Recommendation System
@@ -10,7 +10,7 @@
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
 
-The ability to find a dwelling that is well tailored to your needs can be a challenging task to most tourists, students or working expats. We hypothesize that a fair number of people have not put in sufficient thought into the decision for rentals and come to regret it later. They merely select  a simplistic “Best Option” that is nebulous and founded on unclear terms. This led us to develop the Intelligent Rental Recommendation System to held home seekers make better choices.
+The ability to find a dwelling that is well tailored to your needs can be a challenging task to most tourists, students or working expats. We hypothesize that a fair number of people have not put in sufficient thought into the decision for rentals and come to regret it later. They merely select  a simplistic “Best Option” that is nebulous and founded on unclear terms. This led us to develop the Intelligent Rental Recommendation System to help home seekers make better choices.
 
 With a multitude of websites in the rental industry today ranging from Agoda and Airbnb to PropertyGuru, our Intelligent Rental Recommendation System (IR2S) stands out of the crowd by leveraging on Machine Reasoning Techniques to allow a home seeker to pick the best suited property from the several thousands that are available in the market. The sytem  overcomes these problems by selecting the best properties based on important user attributes which we have gathered through several interviews. 
 
