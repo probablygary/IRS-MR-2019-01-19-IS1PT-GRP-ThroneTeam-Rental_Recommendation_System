@@ -1,0 +1,13 @@
+[
+  [
+    "name" : "MyRentalSearchTask", 
+    "parameters" : [ 
+        "userAnsHolder" : new ObjectDataType("com.gameofthrones.model.UserAnsSearch")
+    ], 
+    "results" : [ 
+        "Result" : new ObjectDataType("com.gameofthrones.model.UserAnsSearch") 
+    ], 
+    "displayName" : "My Rental Search Task", 
+    "icon" : "" 
+  ]
+]

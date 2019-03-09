@@ -1,0 +1,11 @@
+import java.lang.Number;
+import com.gameofthrones.model.UserAnsSearch;
+
+rule "StayWithFamilyNoRule"
+	dialect "mvel"
+	ruleflow-group "StayWithFamily"
+	when
+		userAnsHolder : UserAnsSearch( qnsStayingFamily matches "No" )
+	then
+		userAnsHolder.setLeaseType( "Single" );
+end

@@ -1,0 +1,11 @@
+import java.lang.Number;
+import com.gameofthrones.model.UserAnsSearch;
+
+rule "Purposerule"
+	dialect "mvel"
+	ruleflow-group "PurposeRule"
+	when
+		userAnsHolder : UserAnsSearch( qnsPurpose matches "Leisure" )
+	then
+		userAnsHolder.setQnsPurpose( "Private" );
+end

@@ -1,0 +1,11 @@
+import java.lang.Number;
+import com.gameofthrones.model.UserAnsSearch;
+
+rule "EastZoneRule"
+	dialect "mvel"
+	ruleflow-group "ZoneRule"
+	when
+		userAnsHolder : UserAnsSearch( qnsLocationWork < "510000" && qnsLocationWork > "379999" )
+	then
+		userAnsHolder.setZone( "East" );
+end

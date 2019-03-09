@@ -1,0 +1,11 @@
+import java.lang.Number;
+import com.gameofthrones.model.UserAnsSearch;
+
+rule "NoFoodRule"
+	dialect "mvel"
+	ruleflow-group "FoodRule"
+	when
+		userAnsHolder : UserAnsSearch( qnsCook matches "No" )
+	then
+		userAnsHolder.setFoodCourt( "Y" );
+end

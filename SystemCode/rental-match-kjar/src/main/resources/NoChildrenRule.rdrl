@@ -1,0 +1,11 @@
+import java.lang.Number;
+import com.gameofthrones.model.UserAnsSearch;
+
+rule "NoChildrenRule"
+	dialect "mvel"
+	ruleflow-group "ChildrenRule"
+	when
+		userAnsHolder : UserAnsSearch( qnsNoOfChild == "0" )
+	then
+		userAnsHolder.setNoOfRooms( "3" );
+end

@@ -1,0 +1,12 @@
+import java.lang.Number;
+import com.gameofthrones.model.UserAnsSearch;
+
+rule "YesFoodRule"
+	dialect "mvel"
+	ruleflow-group "FoodRule"
+	when
+		userAnsHolder : UserAnsSearch( qnsCook matches "Yes" )
+	then
+		userAnsHolder.setFoodCourt( "N" );
+		userAnsHolder.setMarket( "Y" );
+end

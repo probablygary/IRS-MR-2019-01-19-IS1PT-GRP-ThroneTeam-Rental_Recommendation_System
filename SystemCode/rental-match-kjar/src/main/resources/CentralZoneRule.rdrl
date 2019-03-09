@@ -1,0 +1,11 @@
+import java.lang.Number;
+import com.gameofthrones.model.UserAnsSearch;
+
+rule "CentralZoneRule"
+	dialect "mvel"
+	ruleflow-group "ZoneRule"
+	when
+		userAnsHolder : UserAnsSearch( qnsLocationWork < "380000" && qnsLocationWork > "279999" )
+	then
+		userAnsHolder.setZone( "Central" );
+end

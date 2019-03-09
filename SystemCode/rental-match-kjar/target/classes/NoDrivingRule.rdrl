@@ -1,0 +1,12 @@
+import java.lang.Number;
+import com.gameofthrones.model.UserAnsSearch;
+
+rule "NoDrivingRule"
+	dialect "mvel"
+	ruleflow-group "DriveRule"
+	when
+		userAnsHolder : UserAnsSearch( qnsTransport matches "Yes" )
+	then
+		userAnsHolder.setBusStop( "N" );
+		userAnsHolder.setMrt( "N" );
+end
