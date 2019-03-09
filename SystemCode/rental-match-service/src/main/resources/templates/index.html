@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Rental Match</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            background: url('../background.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: compact;
+            height: 100%;
+        }
+
+        .center-div {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 60%;
+            height: 70%;
+            background-color: #ccc;
+            border-radius: 3px;
+            background-color: #f8f9fa9c;
+        }
+
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container h-100 d-flex justify-content-center">
+<form action="#" th:action="@{/question1}" method="post">
+    <div class="jumbotron center-div">
+            <div style="text-align: center;">
+                    <h1 class="display-4">Welcome, Renter!</h1>
+                    <p class="lead" style="font-size: 28px;">Looking for a home to rent for yourself, your family or a group of friends? You've come to the right place!</p>
+                    <hr class="my-4">
+                    <p style="font-size: 28px;">Begin your rental match journey by clicking the button below.</p>
+                <br>
+                <button type="submit" class="btn btn-primary">
+                    Match Me
+                </button>
+            </div>
+    </div>
+</form>
+</div>
+
+</body>
+</html>

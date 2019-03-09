@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Rental Match</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.7/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script>
+    function setSubmitActive(){
+        var purpose = document.getElementById('qns2').value;
+
+        if(purpose == ""){
+            $("#nextBtn").attr("disabled", true);
+        }
+        else if(purpose != ""){
+            $("#warningText").text("");
+            $("#nextBtn").attr("disabled", false);
+        }else{
+            $("#nextBtn").attr("disabled", true);
+            $("#warningText").text("Please select an option.");
+        }
+    }
+
+    function initQuestion(){
+        $("#nextBtn").attr("disabled", true);
+        $("#qnsLabel").text("What is your purpose of stay?");
+        $("#qnNoLabel").text("2");
+    }
+
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background: url('../background.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            display: compact;
+            height: 100%;
+        }
+
+        .center-div {
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 60%;
+            height: 70%;
+            background-color: #ccc;
+            border-radius: 3px;
+            background-color: #f8f9fa9c;
+        }
+
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 70%;
+            margin-left:auto; 
+            margin-right:auto;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            font-size: 24px;
+            padding: 8px;
+        }
+
+        .big{
+            width: 1em; 
+            height: 1em;
+        }
+    </style>
+
+</head>
+<body onload="initQuestion()">
+
+<div class="container h-100 d-flex justify-content-center">
+<form action="#" th:action="@{/question3}" method="post" th:object="${userAns}">
+    <div class="jumbotron center-div">
+            <div style="text-align: center;">
+                    <h1 class="display-4">Question <span id="qnNoLabel"></span></h1>
+                    <p class="lead" id="qnsLabel" style="font-size: 28px;"></p>
+                    <hr class="my-4">
+                    <br>
+                    <table>
+                    <tr>
+                        <th>Work</th>
+                        <th><input type="radio" name="qns2" id="qns2" th:value="Work" th:field="${userAns.qnsPurpose}" onfocus="setSubmitActive()" class="big"></th>
+                    </tr>
+                    <tr>
+                        <th>Leisure</th>
+                        <th><input type="radio" name="qns2" id="qns2" th:value="Leisure" th:field="${userAns.qnsPurpose}" onfocus="setSubmitActive()" class="big"</th>
+                    </tr>
+                    <tr>
+                    <th>Study</th>
+                    <th><input type="radio" name="qns2" id="qns2" th:value="Study" th:field="${userAns.qnsPurpose}" onfocus="setSubmitActive()" class="big"></th>
+                    </tr>
+                    </table>
+                    
+                    <br><br><br>
+                    <div style="text-align: center;"><span id="warningText" style="color: red;"></span></div>
+                    <br><br><br>
+                    
+                    <div style="text-align: center;">
+                        <button type="submit" class="btn btn-primary" id="nextBtn" >Next Question</button>
+                    </div>
+                <br>
+            </div>
+    </div>
+</form>
+</div>
+
+</body>
+</html>
