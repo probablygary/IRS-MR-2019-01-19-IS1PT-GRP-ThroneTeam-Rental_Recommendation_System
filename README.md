@@ -60,5 +60,5 @@ Once the app has finished building and deployed, open up a web browser and enter
 
 ### App URL: [IR2S](http://52.221.199.219:8090)
 - the IR2S system hosted on AWS
-### data.csv
+### [data.csv](https://github.com/probablygary/IRS-MR-2019-01-19-IS1PT-GRP-ThroneTeam-IR2S/blob/master/Miscellaneous/data.csv)
 - sample data for the system
