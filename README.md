@@ -37,7 +37,7 @@ With a multitude of websites in the rental industry today ranging from Agoda and
 
 ## SECTION 5 : USER GUIDE
 
-`<Github File Link>` : <https://github.com/telescopeuser/Workshop-Project-Submission-Template/blob/master/UserGuide/User%20Guide%20HDB-BTO.pdf>
+`<Github File Link>` : <https://github.com/probablygary/IRS-MR-2019-01-19-IS1PT-GRP-ThroneTeam-IR2S/blob/master/UserGuide/UserManual-IR2S.pdf>
 
 Enter the following in your command prompt/terminal:
 - Windows: 
@@ -54,9 +54,11 @@ Once the app has finished building and deployed, open up a web browser and enter
 
 ## SECTION 6 : PROJECT REPORT / PAPER
 
-`<Github File Link>` : <https://github.com/telescopeuser/Workshop-Project-Submission-Template/blob/master/ProjectReport/Project%20Report%20HDB-BTO.pdf>
+`<Github File Link>` : <https://github.com/probablygary/IRS-MR-2019-01-19-IS1PT-GRP-ThroneTeam-IR2S/blob/master/ProjectReport/Project%20Report%20-%20IR2S.pdf>
 
 ## SECTION 7 : MISCELLANEOUS
 
+### App URL: [IR2S](http://52.221.199.219:8090)
+- the IR2S system hosted on AWS
 ### data.csv
 - sample data for the system
