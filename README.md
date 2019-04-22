@@ -1,4 +1,4 @@
-# IRS-MR-2019-01-19-IS1PT-GRP-ThroneTeam-IR2S
+# IRS-MR-2019-01-19-IS1PT-GRP-ThroneTeam-Rental_Recommendation_System
 
 ## SECTION 1 : PROJECT TITLE
 ## Intelligent Rental Recommendation System
